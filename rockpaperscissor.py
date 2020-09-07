@@ -10,6 +10,12 @@ print('ROCK, PAPER, SCISSOR')
 # Keep track of the numbers of wins, losses, and ties.
 wins, losses, ties = 0, 0, 0
 
+def counting():
+	# Count to three with dramatic pauses
+	for i in range(1, 4):
+		time.sleep(1/i)
+		print(str(i) + '...')
+
 while True: # main loop
 	while True: # keep asking until player enters R/P/S/Q
 		print(f'{wins} Wins, {losses} Losses, {ties} Ties')
@@ -37,14 +43,7 @@ while True: # main loop
 	# 	   'P': 'PAPER versus...',
 	# 	   'S': 'SCISSOR versus...'}[playerMove])
 
-	# Count to three with dramatic pauses
-	time.sleep(0.5)
-	print('1...')
-	time.sleep(0.25)
-	print('2...')
-	time.sleep(0.25)
-	print('3...')
-	time.sleep(0.25)
+	counting()
 
 	# Display what the computer chose
 	randomNumber = random.randint(1, 3) # or random.choice(['ROCK', 'PAPER', 'SCISSOR'])
@@ -83,3 +82,10 @@ while True: # main loop
 	elif playerMove == 'SCISSOR' and computerMove == 'ROCK':
 		print('You lose!')
 		losses += 1
+
+
+# def main():
+
+
+# if __name__ == '__main__':
+# 	main()
