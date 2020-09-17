@@ -1,5 +1,6 @@
 # HaveFunProgramming
 Just daily programming to remind myself
-Zig-zag
-Rock-pape-scissor
-*Python30seconds
+<br />
+1. Zig-zag
+2. Rock-pape-scissor
+3. *Python30seconds
