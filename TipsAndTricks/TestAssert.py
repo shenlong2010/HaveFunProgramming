@@ -27,7 +27,6 @@ def delete():
 	pass
 
 # Never use assertions to do data
-
 def delete_product(prod_id, user):
 	if not user.is_admin():
 		raise AuthError('Must be admin to delete')
